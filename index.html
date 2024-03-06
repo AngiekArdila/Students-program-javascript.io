@@ -3,10 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>universidad</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="periodos-academicos">
+    <h2>Selección de Periodos Académicos</h2>
+    <select id="periodos">
+        <option value="1">Periodo 1</option>
+        <option value="2">Periodo 2</option>
+        <option value="3">Periodo 3</option>
+        <option value="4">Periodo 4</option>
+    </select>
+    </div>
+    
+    <div id="programas-academicos">
+    <h2>Selección de Programas Académicos</h2>
+    <select id="programas">
+        <option value="ciencias_naturales">Ciencias Naturales</option>
+        <option value="matematicas">Matemáticas</option>
+        <option value="marketing">Marketing</option>
+        <option value="programacion">Programación</option>
+        <option value="economia">Economía</option>
+    </select>
+    </div>
+    
+    <div id="departamentos">
+    <h2>Selección de Departamentos de Colombia</h2>
+    <select id="departamentos" multiple>
+        <option value="amazonas">Amazonas</option>
+        <option value="antioquia">Antioquia</option>
+        <option value="arauca">Arauca</option>
+    </select>
+    </div>
+    
+     <div id="salones">
+    <h2>Selección de Salones</h2>
+        <input type="checkbox" id="sputnik" name="salon" value="sputnik">
+        <label for="sputnik">Sputnik</label><br>
+        <input type="checkbox" id="artemis" name="salon" value="artemis">
+        <label for="artemis">Artemis</label><br>
+     </div>
+   
+    <div id="estudiantes-form">
+    <h2>Estudiante</h2>    
+    <p>porfavor dilegencia el formulario como estudiante</p>
+        <form>
+            <label for="nombreEstudiante">Nombre del Estudiante:</label>
+            <input type="text" id="nombreEstudiante" required>
+            <label for="edadEstudiante">Edad del Estudiante:</label>
+            <input type="number" id="edadEstudiante" required>
+            <label for="emailEstudiante">Correo Electrónico del Estudiante:</label>
+            <input type="email" id="emailEstudiante" required>
+            <button type="button" onclick="crearEstudiante()">Crear Estudiante</button>
+            <button type="button" onclick="mostrarListado()">Ver Listado de Estudiantes</button>
+        </form>
+    </div>
+
+    <div id="listado-estudiantes">
+        <ul></ul>
+        <button type="button" onclick="volverFormulario()">Volver al Formulario</button>
+    </div>
+
+
     <script src="js/departamentos.js"></script>
     <script src="js/personas.js"></script>
     <script src="js/asignaturas.js"></script>
