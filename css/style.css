@@ -1,7 +1,210 @@
-.search-container {
-        margin-bottom: 20px;
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:ital,wght@0,100;1,100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --border-hover:.2rem dashed var(--main-color-titles);
+
+}
+.header {
+    background-color:  rgb(222, 233, 242); 
+    padding-right: 1.5%; 
+    justify-content: center;
+    display: inline;
+    justify-content: space-between;
+    flex-direction:column;
+    float:left;
+    margin:0;
+    width:283px;
+    margin-right:10px;
+    height: 150rem;    
+    box-shadow: 15px 5px 10px #48529944;
     }
 
-    #listado-estudiantes {
-        display: none;
+.header a {
+    color: black;
+    font-size: 25px;
+    transition: color 0.3s ease;
+    letter-spacing: 1.5px; 
+    font-family: 'Merriweather Sans', sans-serif;
 }
+.header a:hover {
+    border-bottom:4px solid white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.header .logo {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+    font-size: 29px;
+    font-weight: bold;
+    color:  black;
+    margin:16%;
+    transition: border 0.3s ease; 
+    letter-spacing: 1px; 
+}
+
+.header .logo:hover {
+    border-bottom:5px solid rgb(16, 15, 15);
+
+}
+.elements{
+    margin:20%; 
+    display:left;
+    float:left;
+    text-align: left;
+    padding-right: 5rem;
+    padding:4%;
+    background-color:rgb(72, 72, 235);
+
+}
+.logo{
+    display:right;
+}
+
+
+body{
+    background-color: #B5D9FC;
+
+}  
+
+
+body{
+    background-color: #B5D9FC;
+
+}  
+
+.section{
+   margin-left: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+#inicio{
+    background-color: rgb(23, 22, 22);
+    min-height: 80vh;
+    display: flex;
+    }
+#generadordematricula{
+    background-color: aliceblue;
+  }
+#buscadorestudiantes{
+    background: rgb(255,206,236);
+  }
+#service{
+    background: rgb(254, 205, 165);
+  }
+#contact{
+    background: aliceblue;
+  }
+#inicio h2{
+    font-size: 7rem;
+    color:white;
+}
+
+#generadordematricula{
+    background-color: rgb(168, 74, 74);
+    min-height: 100vh;
+    display: grid;
+
+}
+
+
+
+#buscadorestudiantes{
+    background-color: rgb(210, 222, 224);
+    min-height: 100vh;
+    display: flex;
+
+}
+
+#service{
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+
+
+}
+.matricula{
+    margin-left: 0px; 
+    flex-direction: column;
+    border-radius: 15px;
+    flex: 1 1 100%; 
+    padding: 2rem;
+    display: flex;
+    align-items: grid;
+    gap: 2rem;
+    font-size: 2rem;
+}
+.matricula p{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+body{
+    background-color: #B5D9FC;
+
+}  
+
+.section{
+   margin-left: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-content: space-around;
+}
+.box-container{
+    margin-left: 0px; 
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    flex: 1 1 100%; 
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.box-container {
+    box-shadow: 6px 5px;
+  }
+.box-container h3{
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #06529E;
+    font-size: 1.5rem;
+
+}  
+
+img{
+    max-width:100%;
+    height:auto;
+    font-weight: bold;
+}
+button {
+    border: 10%;
+    background-color: #75e4e4;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    letter-spacing: 1px; 
+}
+
+
