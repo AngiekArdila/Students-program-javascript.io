@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>universidad</title>
+    <title>Universidad Ariverston</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,230 +13,166 @@
         <nav class="navbar">
             <div class="elements"><a href="#inicio">Nuestra universidad</a></div>
             <div class="elements"><a href="#generadordematricula">Genera tu matricula</a></div>
-            <div class="elements"><a href="">Programas Academicos</a></div>
-            <div class="elements"><a href="">Ingreso a Docentes y administrativos</a></div>
+            <div class="elements"><a href="#programasacademicos">Programas Academicos</a></div>
+            <div class="elements"><a href="#buscadorestudiantes">Nuestros estudiantes</a></div>
+            <div class="elements"><a href="#ingresoprofesores">Ingreso a Docentes y administrativos</a></div>
             <div class="elements"><a href="">Nuestros Docentes</a></div>
-            <div class="elements"><a href="#buscadorestudiantes">NUestros estudiantes</a></div>
-           
         </nav>
     </header>
 
-<section id="inicio">
-    <h2> una universidad de calidad</h2>
-    <div class="image">
-        <img src="Img/Captura desde 2024-03-06 16-10-37.png" alt="">
-    </div>
-    
-</section>    
+    <section id="inicio">
+        <br>
+        <h2>Una universidad de calidad</h2>
+        <div class="image">
+            <img src="Img/Captura desde 2024-03-06 16-10-37.png" alt="">
+        </div>
+    </section>
 
-<section id="generadordematricula">
- <div class="matricula"> 
-    <div id="periodos-academicos">
-    <h2>Selección de Periodos Académicos</h2>
-    <select id="periodos">
-        <option value="1">Periodo 1</option>
-        <option value="2">Periodo 2</option>
-        <option value="3">Periodo 3</option>
-        <option value="4">Periodo 4</option>
-    </select>
-    </div>
-    
- <div id="programas-academicos">
-    <h2>Selección de Programas Académicos</h2>
-    <select id="programas">
-        <option value="ciencias_naturales">Ciencias Naturales</option>
-        <option value="matematicas">Matemáticas</option>
-        <option value="marketing">Marketing</option>
-        <option value="programacion">Programación</option>
-        <option value="economia">Economía</option>
-    </select>
-    </div>
-    
- <div id="departamentos">
-    <h2>Selección de Departamentos de Colombia</h2>
-    <select id="departamentos" multiple>
-        <option value="amazonas">Amazonas</option>
-        <option value="antioquia">Antioquia</option>
-        <option value="arauca">Arauca</option>
-    </select>
-    </div>
-    
- <div id="salones">
-    <h2>Selección de Salones</h2>
-        <input type="checkbox" id="sputnik" name="salon" value="sputnik">
-        <label for="sputnik">Sputnik</label><br>
-        <input type="checkbox" id="artemis" name="salon" value="artemis">
-        <label for="artemis">Artemis</label><br>
-     </div>
-    
-    
- <div id="estudiantes-form">
-    <h2>Estudiante</h2>    
-    <p>porfavor dilegencia el formulario como estudiante</p>
-        <form>
-            <label for="nombreEstudiante">Nombre del Estudiante:</label>
-            <input type="text" id="nombreEstudiante" required>
-            <label for="edadEstudiante">Edad del Estudiante:</label>
-            <input type="number" id="edadEstudiante" required>
-            <label for="emailEstudiante">Correo Electrónico del Estudiante:</label>
-            <input type="email" id="emailEstudiante" required>
-            <button type="button" onclick="crearEstudiante()">Crear Estudiante</button>
-        </form>
-    </div>
-</div>       
-</section>  
+    <section id="generadordematricula">
+        <div class="matricula"> 
+            <div id="periodos-academicos">
+                <h2>Selección de Periodos Académicos</h2>
+                <select id="periodos">
+                    <option value="1">Periodo 1</option>
+                    <option value="2">Periodo 2</option>
+                    <option value="3">Periodo 3</option>
+                    <option value="4">Periodo 4</option>
+                </select>
+            </div>
+        
+            <div id="programas">
+                <h2>Selección de Programas Académicos</h2>
+                <select id="programas">
+                    <option value="ciencias_naturales">Ciencias Naturales</option>
+                    <option value="matematicas">Matemáticas</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="programacion">Programación</option>
+                    <option value="economia">Economía</option>
+                </select>
+            </div>
+        
+            <div id="departamentos">
+                <h2>Selección de Departamentos de Colombia</h2>
+                <select id="departamentos" multiple>
+                    <option value="amazonas">Amazonas</option>
+                    <option value="antioquia">Antioquia</option>
+                    <option value="arauca">Arauca</option>
+                </select>
+            </div>
+        
+            <div id="salones">
+                <h2>Selección de Salones</h2>
+                <input type="checkbox" id="sputnik" name="salon" value="sputnik">
+                <label for="sputnik">Sputnik</label><br>
+                <input type="checkbox" id="artemis" name="salon" value="artemis">
+                <label for="artemis">Artemis</label><br>
+            </div>
+        
+            <div id="estudiantes-form">
+                <h2>Estudiante</h2>    
+                <p>Por favor diligencia el formulario como estudiante</p>
+                <form>
+                    <label for="nombreEstudiante">Nombre del Estudiante:</label>
+                    <input type="text" id="nombreEstudiante" required>
+                    <label for="edadEstudiante">Edad del Estudiante:</label>
+                    <input type="number" id="edadEstudiante" required>
+                    <br>
+                    <label for="emailEstudiante">Correo Electrónico del Estudiante:</label>
+                    <input type="email" id="emailEstudiante" required>
+                    <br>
+                    <button type="button" onclick="crearEstudiante()">Crear Estudiante</button>
+                </form>
+            </div>
+        </div>       
+    </section>  
 
-
-<section id="Programasacademicos">
-    <h2>Estos son nuestros programas academicos</h2>
-    <p>Tenemos una amplia oferta de programas academicos dentos de los cuales se incluyen </p>
-    <section id="cajas-programas">
-        <div class="programasacademicos">
-                <div class="box-container">
-                        <h3>Administracion de empresas</h3>
-                        <p>comodos y livianos</p>
-                        <div class="image">
-                            <img src="Img/54669815-tecnología-de-la-ingeniería-industrial.jpg" alt="">
-                        </div>
-                        <button type="button"><a href="#carritos">
-                            <ion-icon name="cart-outline"></ion-icon>
-                       </i> Añadir al carrito</a></button>
-                </div> 
-                <div class="box-container">
-                    <h3>pantalon</h3>
-                    <p>comodos</p>
-                    <div class="image">
-                        <img src="imagenes /882846437_1.avif" alt="">
-                    </div>
-                    <button type="button"><a href="#carritos">
-                        <ion-icon name="cart-outline"></ion-icon>
-                   </i> Añadir al carrito</a></button>
+    <section id="Programasacademicos">
+        <h2>Estos son nuestros programas académicos</h2>
+        <section id="cajasprogramas">
+            <div class="box-container">
+                <h3>Biología</h3>
+                <p>La carrera de Biología tiene como propósito principal formar profesionales competentes, responsables, creativos y éticos, capaces de hacer investigación científica para generar y transmitir conocimiento. Pretende formar personas que asuman posiciones de liderazgo y contribuyan a resolver problemas biológicos relevantes en Colombia y el mundo, como la pérdida de ecosistemas; y el manejo, conservación y aprovechamiento de hábitats y especies.
+                </p>
+                <div class="image">
+                    <img src="Img/biologia-molecular-ucentral.jpeg" alt="">
                 </div>
-                <div class="box-container">
-                    <h3>Abrigo cafe</h3>
-                    <p>Este abrigo es genial para el frio</p>
-                    <div class="image">
-                        <img src="imagenes /882611567_1.webp" alt="">
-                    </div>
-                    <button type="button"><a href="#carritos">
-                        <ion-icon name="cart-outline"></ion-icon>
-                   </i> Añadir al carrito</a></button>
-                </div>    
-                <div class="box-container">
-                    <h3>pantalon</h3>
-                    <p>pantalon comodo </p>
-                    <div class="image">
-                        <img src="imagenes /67027089_1.jpeg" alt="">
-                    </div>
-                    <button type="button"><a href="#carritos">
-                        <ion-icon name="cart-outline"></ion-icon>
-                   </i> Añadir al carrito</a></button>
-                </div>   
-                <div class="box-container">
-                    <h3>pantalon </h3>
-                    <p>perfecto y comodo</p>
-                    <div class="image">
-                        <img src="imagenes /882611567_1.webp" alt="">
-                    </div>
-                    <<button type="button"><a href="#carritos">
-                        <ion-icon name="cart-outline"></ion-icon>
-                   </i> Añadir al carrito</a></button>
-                    
+                <button type="button"><a href="#carritos"><ion-icon name="cart-outline"></ion-icon> plan de estudios</a></button>
             </div> 
+               
             <div class="box-container">
-                <h3>pantalon</h3>
-                <p>perfecto y comodo </p>
+                <h3>Administración de Empresas</h3>
+                <p>El programa de Administración de Empresas brinda una variedad de posibilidades para desarrollarse personal y profesionalmente. En el contexto de una economía globalizada y altamente competitiva; formamos profesionales que aporten a la creación de valor en las organizaciones y desarrollo humano en la sociedad, respetando los valores fundamentales de equidad y justicia social, desempeñándose en las áreas gerenciales de administración y organizaciones, gestión humana, finanzas, mercadeo, negocios internacionales y emprendimiento.
+                </p>
                 <div class="image">
-                    <img src="imagenes /882846437_1.avif" alt="">
+                    <img src="Img/54669815-tecnología-de-la-ingeniería-industrial.jpg" alt="">
                 </div>
-                <button type="button"><a href="#carritos">
-                    <ion-icon name="cart-outline"></ion-icon>
-               </i> Añadir al carrito</a></button>
-            </div>
+                <button type="button"><a href="#carritos"><ion-icon name="cart-outline"></ion-icon> plan de estudios</a></button>
+            </div> 
+
             <div class="box-container">
-                <h3>pantalon</h3>
-                <p>perfecto y comodo </p>
+                <h3>Biología</h3>
+                <p>La carrera de Biología tiene como propósito principal formar profesionales competentes, responsables, creativos y éticos, capaces de hacer investigación científica para generar y transmitir conocimiento. Pretende formar personas que asuman posiciones de liderazgo y contribuyan a resolver problemas biológicos relevantes en Colombia y el mundo, como la pérdida de ecosistemas; y el manejo, conservación y aprovechamiento de hábitats y especies.
+                </p>
                 <div class="image">
-                    <img src="imagenes /72720132_1.webp" alt="">
+                    <img src="Img/biologia-molecular-ucentral.jpeg" alt="">
                 </div>
-                <button type="button"><a href="#carritos">
-                    <ion-icon name="cart-outline"></ion-icon>
-               </i> Añadir al carrito</a></button>
-            </div>    
+                <button type="button"><a href="#carritos"><ion-icon name="cart-outline"></ion-icon>plan de estudios</a></button>
+            </div> 
+
             <div class="box-container">
-                <h3>pantalon</h3>
-                <p>pantalon comodo </p>
+                <h3>Administración de Empresas</h3>
+                <p>El programa de Administración de Empresas brinda una variedad de posibilidades para desarrollarse personal y profesionalmente. En el contexto de una economía globalizada y altamente competitiva; formamos profesionales que aporten a la creación de valor en las organizaciones y desarrollo humano en la sociedad, respetando los valores fundamentales de equidad y justicia social, desempeñándose en las áreas gerenciales de administración y organizaciones, gestión humana, finanzas, mercadeo, negocios internacionales y emprendimiento.
+                </p>
                 <div class="image">
-                    <img src="imagenes /882611567_1.webp" alt="">
+                    <img src="Img/54669815-tecnología-de-la-ingeniería-industrial.jpg" alt="">
                 </div>
-                <button type="button"><a href="#carritos">
-                    <ion-icon name="cart-outline"></ion-icon>
-               </i> Añadir al carrito</a></button>
-            </div>   
+                <button type="button"><a href="#carritos"><ion-icon name="cart-outline"></ion-icon> plan de estudios</a></button>
+            </div> 
+
             <div class="box-container">
-                <h3>pantalon</h3>
-                <p>genial para el frio</p>
+                <h3>Biología</h3>
+                <p>La carrera de Biología tiene como propósito principal formar profesionales competentes, responsables, creativos y éticos, capaces de hacer investigación científica para generar y transmitir conocimiento. Pretende formar personas que asuman posiciones de liderazgo y contribuyan a resolver problemas biológicos relevantes en Colombia y el mundo, como la pérdida de ecosistemas; y el manejo, conservación y aprovechamiento de hábitats y especies.
+                </p>
                 <div class="image">
-                    <img src="imagenes /882611567_1.webp" alt="">
+                    <img src="Img/biologia-molecular-ucentral.jpeg" alt="">
                 </div>
-                <button type="button"><a href="#carritos">
-                    <ion-icon name="cart-outline"></ion-icon>
-               </i> Añadir al carrito</a></button>
-        </div> 
-        <div class="box-container">
-            <h3>pantalon</h3>
-            <p>ligero</p>
-            <div class="image">
-                <img src="imagenes /882611567_1.webp" alt="">
-            </div>
-            <button type="button"><a href="#carritos">
-                 <ion-icon name="cart-outline"></ion-icon>
-            </i> Añadir al carrito</a></button>
-        </div>
-        <div class="box-container">
-            <h3>pantalon</h3>
-            <p>comodo </p>
-            <div class="image">
-                <img src="imagenes /67027102_1.webp" alt="">
-            </div>
-            <button type="button"><a href="#carritos">
-                <ion-icon name="cart-outline"></ion-icon>
-           </i> Añadir al carrito</a></button>
-        </div>    
-        <div class="box-container">
-            <h3>pantalon</h3>
-            <p>comodo</p>
-            <div class="image">
-                <img src="imagenes /67027102_1.webp" alt="">
-            </div>
-            <button type="button"><a href="#carritos">
-                <ion-icon name="cart-outline"></ion-icon>
-           </i> Añadir al carrito</a></button>
-        </div>        
-                    
-        </div>
+                <button type="button"><a href="#carritos"><ion-icon name="cart-outline"></ion-icon> plan de estudios</a></button>
+            </div> 
+
+            <div class="box-container">
+                <h3>Administración de Empresas</h3>
+                <p>El programa de Administración de Empresas brinda una variedad de posibilidades para desarrollarse personal y profesionalmente. En el contexto de una economía globalizada y altamente competitiva; formamos profesionales que aporten a la creación de valor en las organizaciones y desarrollo humano en la sociedad, respetando los valores fundamentales de equidad y justicia social, desempeñándose en las áreas gerenciales de administración y organizaciones, gestión humana, finanzas, mercadeo, negocios internacionales y emprendimiento.
+                </p>
+                <div class="image">
+                    <img src="Img/54669815-tecnología-de-la-ingeniería-industrial.jpg" alt="">
+                </div>
+                <button type="button"><a href="#carritos"><ion-icon name="cart-outline"></ion-icon> Plan de estudios</a></button>
+            </div> 
         </section>     
+    </section>
 
-</section>
+    <section id="buscadorestudiantes">
+        <div class="buscadorestudiantes">    
+            <h2>Estos son nuestros estudiantes</h2>
+            <br>
+            <p>Aquí puedes buscar los estudiantes que pertenecen a nuestra institución. Sus horarios y demás.</p>
+        </div>
+    </section>    
 
+    <section id="ingresoprofesores">
+        <div class="buscadorprofesores">
+            <h2> Bienvenidos docentes</h2>
+            <p> Aqui puedes ver tus materias asignadas</p>
+        </div>
+    </section>
 
-<section id="buscadorestudiantes">
-<div class="buscadorestudiantes">    
-    <h2>Estos son nuestros estudiantes</h2>
-    <br>
-    <p>Aqui puedes buscar los estudiantes que pertenecen a nuestra institución.Sus horarios y demas.</p>
-</div>
-</section>    
+    <section id="vertodo">
+        <div class="informaciongeneral"></div>
+        <h2>Buscador general</h2>
+        <h3> Aqui podras ver toda la informacion general</h3>
+    </section>
 
     <script src="js/departamentos.js"></script>
     <script src="js/personas.js"></script>
     <script src="js/asignaturas.js"></script>
     <script src="js/periodos.js"></script>
-    <script src="js/programas.js"></script>
-    <script src="js/cursos.js"></script>
-    <script src="js/tarifas.js"></script>
-    <script src="js/salones.js"></script>
-    <script src="js/matriculas.js"></script>
-    <script src="js/app.js"></script>
-</body>
-</html>

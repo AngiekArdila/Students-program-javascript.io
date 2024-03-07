@@ -47,12 +47,14 @@
 .header .logo {
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: bold;
-    font-size: 29px;
+    font-size: 30px;
     font-weight: bold;
     color:  black;
     margin:16%;
     transition: border 0.3s ease; 
     letter-spacing: 1px; 
+    background-color: rgb(184, 54, 54);
+    margin-left: 10%;
 }
 
 .header .logo:hover {
@@ -60,13 +62,13 @@
 
 }
 .elements{
-    margin:20%; 
+    margin:20%;
+    font-weight:bold;
     display:left;
     float:left;
     text-align: left;
     padding-right: 5rem;
     padding:4%;
-    background-color:rgb(72, 72, 235);
 
 }
 .logo{
@@ -94,50 +96,37 @@ body{
 }
 
 #inicio{
-    background-color: rgb(23, 22, 22);
-    min-height: 80vh;
+    background-color: rgba(23, 22, 22, 0.884);
+    min-height: 100vh;
     display: flex;
     }
 #generadordematricula{
-    background-color: aliceblue;
+    background-color: #B5D9FC;
+    min-height: 100vh;
+    display: flex;
   }
+#programasacademicos{
+    background-color: #64819e;
+    min-height: 100vh;
+    display: flex;
+}
+
 #buscadorestudiantes{
-    background: rgb(255,206,236);
-  }
-#service{
     background: rgb(254, 205, 165);
-  }
-#contact{
-    background: aliceblue;
-  }
-#inicio h2{
-    font-size: 7rem;
-    color:white;
-}
-
-#generadordematricula{
-    background-color: rgb(168, 74, 74);
-    min-height: 100vh;
-    display: grid;
-
-}
-
-
-
-#buscadorestudiantes{
-    background-color: rgb(210, 222, 224);
     min-height: 100vh;
     display: flex;
-
-}
-
-#service{
-    background-color: rgb(255, 255, 255);
+  }
+#ingresoprofesores{
+    background: lightgreen;
     min-height: 100vh;
     display: flex;
+}  
+#vertodo{
+    background: lightseagreen;
+    min-height: 100vh;
+    display: flex;
+  }
 
-
-}
 .matricula{
     margin-left: 0px; 
     flex-direction: column;
@@ -167,32 +156,36 @@ body{
     gap: 2rem;
     justify-content: space-around;
 }
-.box-container{
+#cajasprogramas{
     margin-left: 0px; 
-    flex-direction: column;
+    /* flex-direction: column; */
     border-radius: 15px;
+    border:black;
     background-color: rgb(255, 255, 255);
     flex: 1 1 100%; 
     padding: 2rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 1.5rem;
 }
-.box-container {
-    box-shadow: 6px 5px;
-  }
-.box-container h3{
-    font-family: 'Merriweather Sans', sans-serif;
-    color: #06529E;
-    font-size: 1.5rem;
 
-}  
 
 img{
     max-width:100%;
-    height:auto;
+    height:40%;
     font-weight: bold;
+    margin-top: 19%;
 }
+
+#inicio h2{
+    font-size: 5rem;
+    color:white;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 19%;
+    margin-left: 5%;
+}
+
 button {
     border: 10%;
     background-color: #75e4e4;
