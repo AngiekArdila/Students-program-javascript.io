@@ -1,17 +1,18 @@
-const listaAlumnos = [];
+let listaAlumnos = [];
 
-const loadAlumnos = async () => {
+const load = async (url) => {
     try {
-        listaAlumnos.length = 0;
-        const respuesta = await fetch('http://localhost:3000/alumnos');
+        lista = [];
+        const respuesta = await fetch(`http://localhost:3000/${url}`);
 
         if (!respuesta.ok) {
-            throw new Error('Error al cargar alumnos. Estado: ' + respuesta.status);
+            throw new Error(`Error al cargar ${url}. Estado: ` + respuesta.status);
         }
-        const alumnos = await respuesta.json();
-        listaAlumnos.push(...alumnos);
+        const listaJson = await respuesta.json();
+        lista.push(...listaJson);
+        return lista;
     } catch (error) {
-        console.error("Error al cargar alumnos", error.message);
+        console.error(`Error al cargar ${url}`, error.message);
     }
 }
 
@@ -96,7 +97,7 @@ const crearAlumno = async () => {
     };
 
     await guardarAlumno(nuevoAlumno);
-    await loadAlumnos();
+    listaAlumnos = await load("alumnos");
 
     const form = document.querySelector('form');
     form.reset();
@@ -105,10 +106,9 @@ const crearAlumno = async () => {
 }
 
 const mostrarListado = async () => {
-    await loadAlumnos();
+    listaAlumnos = await load("alumnos");
     const alumnosForm = document.getElementById('alumnos-form');
     const listadoAlumnos = document.getElementById('listado-alumnos');
-
     alumnosForm.style.display = 'none';
     listadoAlumnos.style.display = 'block';
 
