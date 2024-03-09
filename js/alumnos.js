@@ -64,7 +64,7 @@ const cargarFormularioAlumnos = () => {
             <label for="programaIdAlumno">ID del Programa:</label>
             <input type="number" id="programaIdAlumno" required>
             <button type="button" onclick="crearAlumno()">Crear Alumno</button>
-            <button type="button" onclick="mostrarListado()">Ver Listado de Alumnos</button>
+            <button type="button" onclick="mostrarListadoAlumnos()">Ver Listado de Alumnos</button>
         </form>
     `;
     const listadoAlumnos = document.getElementById('listado-alumnos');
@@ -105,7 +105,7 @@ const crearAlumno = async () => {
     alert('Alumno creado con éxito!');
 }
 
-const mostrarListado = async () => {
+const mostrarListadoAlumnos = async () => {
     listaAlumnos = await load("alumnos");
     const alumnosForm = document.getElementById('alumnos-form');
     const listadoAlumnos = document.getElementById('listado-alumnos');
@@ -125,11 +125,11 @@ const mostrarListado = async () => {
 
     const volverButton = document.createElement('button');
     volverButton.textContent = 'Volver al Formulario';
-    volverButton.addEventListener('click', volverFormulario);
+    volverButton.addEventListener('click', volverFormularioAlumnos);
     listadoAlumnos.appendChild(volverButton);
 }
 
-const volverFormulario = () => {
+const volverFormularioAlumnos = () => {
     const alumnosForm = document.getElementById('alumnos-form');
     const listadoAlumnos = document.getElementById('listado-alumnos');
 
