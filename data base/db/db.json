@@ -5,6 +5,18 @@
       "codigo": "P24-01",
       "ano": 2024,
       "semestre": 1
+    },
+    {
+      "id": "6794",
+      "codigo": "knnk",
+      "ano": 5,
+      "semestre": 3
+    },
+    {
+      "id": "d864",
+      "codigo": "",
+      "ano": null,
+      "semestre": null
     }
   ],
   "programas": [
@@ -17,6 +29,11 @@
       "id": "2",
       "nombre": "Ingeniería de Mecatronica",
       "nivel": "Pregrado"
+    },
+    {
+      "id": "ba6e",
+      "nombre": "ndjndsjws mck",
+      "nivel": "cms mc s"
     }
   ],
   "tarifas": [
@@ -41,6 +58,10 @@
     {
       "id": "2",
       "nombre": "Departamento de Matemáticas"
+    },
+    {
+      "id": "daeb",
+      "nombre": ",ma,am,"
     }
   ],
   "profesores": [
