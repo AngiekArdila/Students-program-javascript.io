@@ -27,55 +27,7 @@
             <img src="Img/Captura desde 2024-03-06 16-10-37.png" alt="">
         </div>
     </section>
-
-    <section id="generadordematricula">
-        <div class="matricula"> 
-        
-            <div id="programas">
-                <h2>Selección de Programas Académicos</h2>
-                <select id="programas">
-                    <option value="ciencias_naturales">Ciencias Naturales</option>
-                    <option value="matematicas">Matemáticas</option>
-                    <option value="marketing">Marketing</option>
-                    <option value="programacion">Programación</option>
-                    <option value="economia">Economía</option>
-                </select>
-            </div>
-        
-            <div id="departamentos">
-                <h2>Selección de Departamentos de Colombia</h2>
-                <select id="departamentos" multiple>
-                    <option value="amazonas">Amazonas</option>
-                    <option value="antioquia">Antioquia</option>
-                    <option value="arauca">Arauca</option>
-                </select>
-            </div>
-        
-            <div id="salones">
-                <h2>Selección de Salones</h2>
-                <input type="checkbox" id="sputnik" name="salon" value="sputnik">
-                <label for="sputnik">Sputnik</label><br>
-                <input type="checkbox" id="artemis" name="salon" value="artemis">
-                <label for="artemis">Artemis</label><br>
-            </div>
-        
-            <div id="estudiantes-form">
-                <h2>Estudiante</h2>    
-                <p>Por favor diligencia el formulario como estudiante</p>
-                <form>
-                    <label for="nombreEstudiante">Nombre del Estudiante:</label>
-                    <input type="text" id="nombreEstudiante" required>
-                    <label for="edadEstudiante">Edad del Estudiante:</label>
-                    <input type="number" id="edadEstudiante" required>
-                    <br>
-                    <label for="emailEstudiante">Correo Electrónico del Estudiante:</label>
-                    <input type="email" id="emailEstudiante" required>
-                    <br>
-                    <button type="button" onclick="crearEstudiante()">Crear Estudiante</button>
-                </form>
-            </div>
-        </div>       
-    </section>  
+ 
 
     <section id="Programasacademicos">
         <h2>Estos son nuestros programas académicos</h2>
@@ -142,12 +94,11 @@
         </section>     
     </section>
 
-    <section id="alumnos">
-        <h2>Módulo de alumnos</h2>
-        <div id="alumnos-form"></div>
+    <section id="creadorDeEstudiantes">
+        <h2>crear un nuevo estudiante </h2>
+        <div id="estudiantes-crear"></div>  
         <div id="listado-alumnos"></div>
-        <button onclick="mostrarListadoAlumnos()">Ver estudiantes</button>
-     </section>
+    </section>
 
      <section id="periodos">
         <h2>Módulo de periodos</h2>
@@ -156,8 +107,24 @@
         <button onclick="mostrarListadoPeriodos()">Ver periodos</button>
      </section>
 
+     <section id="departamentos">
+        <h2>Módulo de Departamentos</h2>
+        <div id="departamentos-form"></div>
+        <div id="listado-departamentos"></div>
+        <button onclick="mostrarListadoDepartamentos()">Ver Departamentos</button>
+     </section>
+
+     <section id="programas">
+        <h2>Módulo de programas</h2>
+        <div id="departamentos-form"></div>
+        <div id="listado-departamentos"></div>
+        <button onclick="mostrarListadoDepartamentos()">Ver Departamentos</button>
+     </section>
+
     <script src="js/alumnos.js"></script>
     <script src="js/departamentos.js"></script>
     <!-- <script src="js/personas.js"></script> -->
     <script src="js/asignaturas.js"></script>
     <script src="js/periodos.js"></script>
+    <script src="js/app.js"></script>
+

@@ -37,7 +37,7 @@ const guardarAlumno = async (nuevoAlumno) => {
 }
 
 const cargarFormularioAlumnos = () => {
-    const alumnosForm = document.getElementById('alumnos-form');
+    const alumnosForm = document.getElementById('estudiantes-crear');
     alumnosForm.innerHTML = `
         <form>
             <label for="nombreAlumno">Nombre del Alumno:</label>
@@ -68,7 +68,6 @@ const cargarFormularioAlumnos = () => {
         </form>
     `;
     const listadoAlumnos = document.getElementById('listado-alumnos');
-    listadoAlumnos.style.display = 'none';
 }
 
 const crearAlumno = async () => {
@@ -107,7 +106,7 @@ const crearAlumno = async () => {
 
 const mostrarListadoAlumnos = async () => {
     listaAlumnos = await load("alumnos");
-    const alumnosForm = document.getElementById('alumnos-form');
+    const alumnosForm = document.getElementById('estudiantes-crear');
     const listadoAlumnos = document.getElementById('listado-alumnos');
     alumnosForm.style.display = 'none';
     listadoAlumnos.style.display = 'block';

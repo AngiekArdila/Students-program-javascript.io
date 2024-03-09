@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',async ()=>{
-    await loadAlumnos();
+    await load("alumnos");
     cargarFormularioAlumnos();
-    await  loadPeriodos();
+    await  load("periodos");
     cargarFormularioPeriodos();
     /*await loadProductos();
     cargarFormularioProductos();

@@ -119,6 +119,13 @@ body{
     min-height: 100vh;
     display: flex;
 }  
+#estudiantes-crear > form{
+    min-height: 100vh;
+    width: 50%;
+    display: flex;
+    padding-left: 12vw;
+    flex-direction: column;
+}
 #vertodo{
     background: lightseagreen;
     min-height: 100vh;
