@@ -62,6 +62,10 @@
     {
       "id": "daeb",
       "nombre": ",ma,am,"
+    },
+    {
+      "id": "630f",
+      "nombre": ""
     }
   ],
   "profesores": [
@@ -208,6 +212,13 @@
       "asignatura_id": 2,
       "periodo_id": 1,
       "precio": 3300
+    },
+    {
+      "id": "151a",
+      "estudiante_id": 2,
+      "asignatura_id": 2,
+      "periodo_id": 3,
+      "precio": 3
     }
   ]
 }

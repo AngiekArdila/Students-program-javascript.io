@@ -2,14 +2,20 @@ document.addEventListener('DOMContentLoaded',async ()=>{
     listaAlumnos = await load("alumnos");
     cargarFormularioAlumnos();
     listaPeriodos = await  load("periodos");
-    cargarFormularioPeriodos();
+    mostrarListadoPeriodos();
     listaDepartamentos = await load("departamentos");
-    cargarFormularioDepartamentos();
+    mostrarListadoDepartamentos();
     listaProgramas = await load("programas");
-    cargarFormularioProgramas();
+    mostrarListadoProgramas();
     listaAsignaturas = await load("asignaturas");
     listaCursos = await load("cursos");
     cargarFormularioAsignaturas();
+    listaMatriculas= await load("matriculas");
+    cargarFormularioMatriculas();
+    listaSalones= await load("salones");
+    mostrarListadoSalones();
+    listaTarifas= await load("tarifas");
+    mostrarListadoTarifas();
 
 
     /*await loadProductos();

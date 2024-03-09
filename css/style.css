@@ -28,8 +28,10 @@
     margin:0;
     width:283px;
     margin-right:10px;
-    height: 150rem;    
+    height: 100vh;    
     box-shadow: 15px 5px 10px #48529944;
+    position: fixed;
+    overflow-y: scroll;
     }
 
 .header a {
@@ -85,8 +87,9 @@ body{
 
 }  
 
-.section{
-   margin-left: 80px;
+section{
+    margin-left: 300px;
+    padding-left: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
@@ -121,9 +124,9 @@ body{
 }  
 #estudiantes-crear > form{
     min-height: 100vh;
-    width: 50%;
+    width: 550px;
     display: flex;
-    padding-left: 12vw;
+    padding-left: 0;
     flex-direction: column;
 }
 #vertodo{
