@@ -15,9 +15,16 @@ body {
     padding: 20px;
 }
 
+/* .container-fluid{
+    position: fixed;
+} */
+
+#navbarSupportedContent{
+    width: 100px;
+}
+
 /* Estilos para el navbar */
 .navbar {
-    background-color: #333;
     color: #fff;
     padding: 15px 0;
     text-align: center;
@@ -32,6 +39,7 @@ body {
 
 /* Estilos para las secciones */
 section {
+    min-height: 90vh;
     padding: 30px; /* Aumentamos el relleno interno para más espacio dentro de cada sección */
     margin-bottom: 30px; /* Aumentamos el margen inferior para separar más las secciones */
     background-color: #fff; /* Fondo blanco para las secciones */

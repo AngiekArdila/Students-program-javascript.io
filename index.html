@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img id="initiallogo" src="" class="img-fluid" alt="">
@@ -18,7 +18,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto ml-auto mb-2">
+                    <ul class="navbar-nav me-auto ml-auto mb-2 container-fluid">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
                           </li>
@@ -45,24 +45,24 @@
                           <li class="nav-item">
                             <a id="Classrooms" class="nav-link" href="#programas">programas Academicos</a>
                           </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#asignaturas-crear" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#asignaturas-crear" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                Asignaturas
                             </a>
-                            <ul class="dropdown-menu">
+                            <!-- <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#listado-asignaturas">asignaturas</a></li>
                               <li><hr class="dropdown-divider"></li>                        
-                            </ul>
+                            </ul> -->
                           </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#estudiantes-crear" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <li class="nav-item ">
+                            <a class="nav-link " href="#estudiantes-crear" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Estudiantes
                             </a>
-                            <ul class="dropdown-menu">
+                            <!-- <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#listado-alumnos">Estudiantes</a></li>
                               <li><hr class="dropdown-divider"></li>
                               <li class="nav-item dropdown">
-                                </ul>
+                                </ul> -->
                               </li>
                             </ul>
                         </li>
@@ -165,12 +165,15 @@
         <h2>Módulo de periodos</h2>
         <div id="listado-periodos"></div>
      </section>
+     <br>
      <section id="salones">
         <h2>salones</h2>
         <div id="salones-crear"></div>  
         <div id="listado-salones"></div>
     </section>
 
+
+    
      <section id="departamentos">
         <h2>Módulo de Departamentos</h2>
         <div id="listado-departamentos"></div>
@@ -204,10 +207,10 @@
         <div id="estudiantes-crear"></div>  
         <div id="listado-alumnos"></div>
     </section>
-    </div>
+</div>
 
    
-
+</body>
     
     <script src="js/alumnos.js"></script>
     <script src="js/Listados.js"></script>
