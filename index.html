@@ -3,34 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universidad Ariverston</title>
+    <title>universidad Ariverstone</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">Universidad</a>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img id="initiallogo" src="" class="img-fluid" alt="">
+                    <span>Universidad Ariverstone</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ml-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="Periods" class="nav-link" href="#Programasacademicos">Carreras</a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="Programs" class="nav-link" href="#periodos">Periodos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="Fees" class="nav-link" href="#salones">salones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="Deparments" class="nav-link" href="#departamentos">Departamentos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a id="Courses" class="nav-link" href="#tarifas">tarifas</a>
+                          </li>
+                          
+                          <li class="nav-item">
+                            <a id="Classrooms" class="nav-link" href="#matriculas">MATRICULAS</a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a id="Classrooms" class="nav-link" href="#programas">programas Academicos</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#asignaturas-crear" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               Asignaturas
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#listado-asignaturas">asignaturas</a></li>
+                              <li><hr class="dropdown-divider"></li>                        
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#estudiantes-crear" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Estudiantes
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#listado-alumnos">Estudiantes</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li class="nav-item dropdown">
+                                </ul>
+                              </li>
+                            </ul>
+                        </li>
     
-        <nav class="navbar">
-            <div class="elements"><a href="#inicio">Nuestra universidad</a></div>
-            <div class="elements"><a href="#generadordematricula">Genera tu matricula</a></div>
-            <div class="elements"><a href="#programasacademicos">Programas Academicos</a></div>
-            <div class="elements"><a href="#buscadorestudiantes">Nuestros estudiantes</a></div>
-            <div class="elements"><a href="#ingresoprofesores">Ingreso a Docentes y administrativos</a></div>
-            <div class="elements"><a href="">Nuestros Docentes</a></div>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <!-- <nav class="navbar">
+            <div class="elements"><a href="#inicio">Nuestra universidad</a></div>
+            <div class="elements"><a href="#Programasacademicos">Programas Academicos</a></div>
+            <div class="elements"><a href="#periodos">ver periodos</a></div>
+            <div class="elements"><a href="#salones">ver Salones</a></div>
+            <div class="elements"><a href="#departamentos">ver Departamentos</a></div>
+            <div class="elements"><a href="#tarifas">ver tarifas</a></div>
+            <div class="elements"><a href="#programas">ver programas</a></div>
+            <div class="elements"><a href="#creadorDeAsignaturas">crear asignaturas</a></div>
+            <div class="elements"><a href="#matricula">crear matricula</a></div>
+            <div class="elements"><a href="#creadorDeEstudiantes">crear Estudiantes</a></div>
+        </nav> -->
     </header>
 
     <section id="inicio">
-        <br>
-        <h2>Una universidad de calidad</h2>
         <div class="image">
             <img src="Img/Captura desde 2024-03-06 16-10-37.png" alt="">
         </div>
+        <div class="texto"><h2>Una universidad de calidad</h2></div>    
     </section>
  
     <section id="Programasacademicos">
-        <h2>Estos son nuestros programas académicos</h2>
-        <section id="cajasprogramas">
             <div class="box-container">
                 <h3>Biología</h3>
                 <p>La carrera de Biología tiene como propósito principal formar profesionales competentes, responsables, creativos y éticos, capaces de hacer investigación científica para generar y transmitir conocimiento. Pretende formar personas que asuman posiciones de liderazgo y contribuyan a resolver problemas biológicos relevantes en Colombia y el mundo, como la pérdida de ecosistemas; y el manejo, conservación y aprovechamiento de hábitats y especies.
@@ -43,7 +105,7 @@
                
             <div class="box-container">
                 <h3>Administración de Empresas</h3>
-                <p>El programa de Administración de Empresas brinda una variedad de posibilidades para desarrollarse personal y profesionalmente. En el contexto de una economía globalizada y altamente competitiva; formamos profesionales que aporten a la creación de valor en las organizaciones y desarrollo humano en la sociedad, respetando los valores fundamentales de equidad y justicia social, desempeñándose en las áreas gerenciales de administración y organizaciones, gestión humana, finanzas, mercadeo, negocios internacionales y emprendimiento.
+                <p>El programa de Administración de Empresas brinda una variedad de posibilidades para desarrollarse personal y profesionalmente. En el contexto de una economía globalizada y altamente competitiva; formamos profesionales que aporten a la creación de valor en las organizaciones y desarrollo humano en la sociedad, respetando los valores fundamentales de equidad y justicia social.
                 </p>
                 <div class="image">
                     <img src="Img/54669815-tecnología-de-la-ingeniería-industrial.jpg" alt="">
@@ -63,7 +125,7 @@
 
             <div class="box-container">
                 <h3>Administración de Empresas</h3>
-                <p>El programa de Administración de Empresas brinda una variedad de posibilidades para desarrollarse personal y profesionalmente. En el contexto de una economía globalizada y altamente competitiva; formamos profesionales que aporten a la creación de valor en las organizaciones y desarrollo humano en la sociedad, respetando los valores fundamentales de equidad y justicia social, desempeñándose en las áreas gerenciales de administración y organizaciones, gestión humana, finanzas, mercadeo, negocios internacionales y emprendimiento.
+                <p>El programa de Administración de Empresas brinda una variedad de posibilidades para desarrollarse personal y profesionalmente. En el contexto de una economía globalizada y altamente competitiva; formamos profesionales que aporten a la creación de valor en las organizaciones y desarrollo humano en la sociedad, respetando los valores fundamentales de equidad y justicia social.
                 </p>
                 <div class="image">
                     <img src="Img/54669815-tecnología-de-la-ingeniería-industrial.jpg" alt="">
@@ -83,41 +145,48 @@
 
             <div class="box-container">
                 <h3>Administración de Empresas</h3>
-                <p>El programa de Administración de Empresas brinda una variedad de posibilidades para desarrollarse personal y profesionalmente. En el contexto de una economía globalizada y altamente competitiva; formamos profesionales que aporten a la creación de valor en las organizaciones y desarrollo humano en la sociedad, respetando los valores fundamentales de equidad y justicia social, desempeñándose en las áreas gerenciales de administración y organizaciones, gestión humana, finanzas, mercadeo, negocios internacionales y emprendimiento.
+                <p>El programa de Administración de Empresas brinda una variedad de posibilidades para desarrollarse personal y profesionalmente. En el contexto de una economía globalizada y altamente competitiva; formamos profesionales que aporten a la creación de valor en las organizaciones y desarrollo humano en la sociedad, respetando los valores fundamentales de equidad y justicia social.
                 </p>
                 <div class="image">
                     <img src="Img/54669815-tecnología-de-la-ingeniería-industrial.jpg" alt="">
                 </div>
-                <button type="button"><a href="#carritos"><ion-icon name="cart-outline"></ion-icon> Plan de estudios</a></button>
-            </div> 
-        </section>     
+                <button type="button"><a href="#carritos"><ion-icon name="cart-outline"></ion-icon> plan de estudios</a></button>
+            </div>    
     </section>
 
-    <section id="creadorDeEstudiantes">
-        <h2>crear un nuevo estudiante </h2>
-        <div id="estudiantes-crear"></div>  
-        <div id="listado-alumnos"></div>
-    </section>
+    
 
      <section id="periodos">
         <h2>Módulo de periodos</h2>
         <div id="listado-periodos"></div>
      </section>
+     <section id="salones">
+        <h2>salones</h2>
+        <div id="salones-crear"></div>  
+        <div id="listado-salones"></div>
+    </section>
 
      <section id="departamentos">
         <h2>Módulo de Departamentos</h2>
         <div id="listado-departamentos"></div>
      </section>
+     <section id="tarifas">
+        <h2>crear nueva tarifas </h2>
+        <div id="tarifas-crear"></div>  
+        <div id="listado-tarifas"></div>
+    </section>
 
      <section id="programas">
         <h2>Módulo de programas</h2>
         <div id="listado-programas"></div>
      </section>
 
+    <div class="crear">
     <section id="creadorDeAsignaturas">
         <div id="asignaturas-crear"></div>  
         <div id="listado-asignaturas"></div>
     </section>
+    </div>
 
     <section id="matriculas">
         <h2>crear nueva matricula </h2>
@@ -125,17 +194,16 @@
         <div id="listado-matriculas"></div>
     </section>
 
-    <section id="tarifas">
-        <h2>crear nueva tarifas </h2>
-        <div id="tarifas-crear"></div>  
-        <div id="listado-tarifas"></div>
+    <section id="creadorDeEstudiantes">
+        <h2>crear un nuevo estudiante </h2>
+        <div id="estudiantes-crear"></div>  
+        <div id="listado-alumnos"></div>
     </section>
+    </div>
 
-    <section id="salones">
-        <h2>salones</h2>
-        <div id="salones-crear"></div>  
-        <div id="listado-salones"></div>
-    </section>
+   
+
+    
     <script src="js/alumnos.js"></script>
     <script src="js/Listados.js"></script>
     <script src="js/asignaturas.js"></script>

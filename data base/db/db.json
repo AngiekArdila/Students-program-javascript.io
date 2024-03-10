@@ -219,6 +219,13 @@
       "asignatura_id": 2,
       "periodo_id": 3,
       "precio": 3
+    },
+    {
+      "id": "92be",
+      "estudiante_id": 2,
+      "asignatura_id": 2,
+      "periodo_id": 2,
+      "precio": 3
     }
   ]
 }

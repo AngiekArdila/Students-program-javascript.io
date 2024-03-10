@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
@@ -7,7 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&family=Open+Sans:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:ital,wght@0,100;1,100&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
 *{
     text-decoration: none;
     margin: 0px;
@@ -17,63 +17,8 @@
     --border-hover:.2rem dashed var(--main-color-titles);
 
 }
-.header {
-    background-color:  rgb(222, 233, 242); 
-    padding-right: 1.5%; 
-    justify-content: center;
-    display: inline;
-    justify-content: space-between;
-    flex-direction:column;
-    float:left;
-    margin:0;
-    width:283px;
-    margin-right:10px;
-    height: 100vh;    
-    box-shadow: 15px 5px 10px #48529944;
-    position: fixed;
-    overflow-y: scroll;
-    }
 
-.header a {
-    color: black;
-    font-size: 25px;
-    transition: color 0.3s ease;
-    letter-spacing: 1.5px; 
-    font-family: 'Merriweather Sans', sans-serif;
-}
-.header a:hover {
-    border-bottom:4px solid white;
-    font-family: 'Merriweather Sans', sans-serif;
-}
 
-.header .logo {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    font-weight: bold;
-    color:  black;
-    margin:16%;
-    transition: border 0.3s ease; 
-    letter-spacing: 1px; 
-    background-color: rgb(184, 54, 54);
-    margin-left: 20%;
-    margin-top: 10%;
-}
-
-.header .logo:hover {
-    border-bottom:5px solid rgb(16, 15, 15);
-
-}
-.elements{
-    margin:20%;
-    font-weight:bold;
-    display:left;
-    float:left;
-    text-align: left;
-    padding-right: 5rem;
-    padding:4%;
-
-}
 
 
 body{
@@ -81,47 +26,6 @@ body{
 
 }  
 
-
-body{
-    background-color: #B5D9FC;
-
-}  
-
-section{
-    margin-left: 300px;
-    padding-left: 30px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    justify-content: space-around;
-}
-
-#inicio{
-    background-color: rgba(23, 22, 22, 0.884);
-    min-height: 100vh;
-    display: flex;
-    }
-#generadordematricula{
-    background-color: #B5D9FC;
-    min-height: 100vh;
-    display: flex;
-  }
-#programasacademicos{
-    background-color: #64819e;
-    min-height: 100vh;
-    display: flex;
-}
-
-#alumnos{
-    background: rgb(254, 205, 165);
-    min-height: 100vh;
-    display: flex;
-  }
-#periodos{
-    background: lightgreen;
-    min-height: 100vh;
-    display: flex;
-}  
 #estudiantes-crear > form{
     min-height: 100vh;
     width: 550px;
@@ -129,11 +33,7 @@ section{
     padding-left: 0;
     flex-direction: column;
 }
-#vertodo{
-    background: lightseagreen;
-    min-height: 100vh;
-    display: flex;
-  }
+
 
 .matricula{
     margin-left: 0px; 
@@ -152,32 +52,17 @@ section{
 }
 
 
-body{
-    background-color: #B5D9FC;
-
-}  
-
-.section{
-   margin-left: 80px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    justify-content: space-around;
-}
-#cajasprogramas{
+#Programasacademicos{
     margin-left: 0px; 
-    /* flex-direction: column; */
-    border-radius: 15px;
+    border-radius: 1px;
     border:black;
     background-color: rgb(255, 255, 255);
     flex: 1 1 100%; 
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    align-items: center;
     gap: 1.5rem;
 }
-
 
 img{
     max-width:100%;
@@ -187,16 +72,19 @@ img{
 }
 
 #inicio h2{
-    font-size: 5rem;
+    font-size: 3rem;
     color:white;
     font-family: 'Merriweather Sans', sans-serif;
     margin-top: 19%;
     margin-left: 5%;
 }
 
+
+
+
 button {
     border: 10%;
-    background-color: #75e4e4;
+    background-color: lightgreen;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -207,5 +95,4 @@ button {
     cursor: pointer;
     letter-spacing: 1px; 
 }
-
 
