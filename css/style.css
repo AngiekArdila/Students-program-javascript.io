@@ -1,98 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&family=Open+Sans:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:ital,wght@0,100;1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
-
-*{
-    text-decoration: none;
-    margin: 0px;
-    padding: 0px;
-}
-:root{
-    --border-hover:.2rem dashed var(--main-color-titles);
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-
-
-
-body{
-    background-color: #B5D9FC;
-
-}  
-
-#estudiantes-crear > form{
-    min-height: 100vh;
-    width: 550px;
-    display: flex;
-    padding-left: 0;
-    flex-direction: column;
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
 }
 
-
-.matricula{
-    margin-left: 0px; 
-    flex-direction: column;
-    border-radius: 15px;
-    flex: 1 1 100%; 
-    padding: 2rem;
-    display: flex;
-    align-items: grid;
-    gap: 2rem;
-    font-size: 2rem;
-}
-.matricula p{
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 1.5rem;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-
-#Programasacademicos{
-    margin-left: 0px; 
-    border-radius: 1px;
-    border:black;
-    background-color: rgb(255, 255, 255);
-    flex: 1 1 100%; 
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1.5rem;
-}
-
-img{
-    max-width:100%;
-    height:40%;
-    font-weight: bold;
-    margin-top: 19%;
-}
-
-#inicio h2{
-    font-size: 3rem;
-    color:white;
-    font-family: 'Merriweather Sans', sans-serif;
-    margin-top: 19%;
-    margin-left: 5%;
-}
-
-
-
-
-button {
-    border: 10%;
-    background-color: lightgreen;
-    padding: 15px 32px;
+/* Estilos para el navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 4px 2px;
-    cursor: pointer;
-    letter-spacing: 1px; 
 }
 
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 30px; /* Aumentamos el relleno interno para más espacio dentro de cada sección */
+    margin-bottom: 30px; /* Aumentamos el margen inferior para separar más las secciones */
+    background-color: #fff; /* Fondo blanco para las secciones */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+section h2 {
+    font-size: 24px; /* Tamaño de fuente para los títulos de sección */
+    margin-bottom: 10px; /* Margen inferior para separar el título del contenido */
+}
+
+
+
+
+#inicio {
+    background-color: #B5D9FC;
+    padding: 50px 0;
+}
+
+.inicio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.texto {
+    width: 50%;
+}
+
+.image img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-left: 17%;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 50px 0;
+}
+
+.inicio-section .texto h2 {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#Programasacademicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.box-container {
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.box-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.box-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.box-container .image {
+    margin-bottom: 15px;
+}
+
+.box-container button {
+    background-color: lightgreen;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.box-container button a {
+    color: black;
+    text-decoration: none;
+}
+
+.box-container button a ion-icon {
+    margin-right: 5px;
+}
