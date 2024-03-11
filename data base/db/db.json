@@ -154,6 +154,19 @@
       "fecha_nacimiento": "2121-02-02",
       "sexo": "Masculino",
       "programa_id": 2
+    },
+    {
+      "id": "5806",
+      "nombre": "raul ",
+      "apellido": "perez",
+      "tipo_documento": "121212",
+      "numero_documento": "2121212",
+      "ciudad_residencia": "788859",
+      "direccion": "mnsjdnsjk",
+      "telefono": "2125151",
+      "fecha_nacimiento": "0499-08-07",
+      "sexo": "Masculino",
+      "programa_id": 2
     }
   ],
   "cursos": [
@@ -275,6 +288,20 @@
       "asignatura_id": 3,
       "periodo_id": 5,
       "precio": -5
+    },
+    {
+      "id": "d712",
+      "estudiante_id": 2,
+      "asignatura_id": 2,
+      "periodo_id": 2,
+      "precio": 2
+    },
+    {
+      "id": "af22",
+      "estudiante_id": 2,
+      "asignatura_id": 2,
+      "periodo_id": 2,
+      "precio": 2
     }
   ]
 }

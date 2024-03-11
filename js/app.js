@@ -10,8 +10,9 @@ document.addEventListener('DOMContentLoaded',async ()=>{
     listaSalones= await load("salones");
     mostrarListadoSalones();
     listaAsignaturas = await load("asignaturas");
-    listaCursos = await load("cursos");
     cargarFormularioAsignaturas();
+    // mostrarListaAsignaturas();
+    listaCursos = await load("cursos");
     listaMatriculas= await load("matriculas");
     cargarFormularioMatriculas();
     listaTarifas= await load("tarifas");

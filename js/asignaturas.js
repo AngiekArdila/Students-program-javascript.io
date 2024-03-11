@@ -43,7 +43,8 @@ const cargarFormularioAsignaturas = async () => {
               </select>
             </div>
             <button type="button" onclick="crearAsignatura()">Crear Asignatura</button>
-      </form>  
+            <button type="button" onclick="mostrarListaAsignaturas()">Ver Listado de asignaturas</button>
+            </form>  
   `;
 
   buscadorDocentes('search-input-DocenteAsign', 'search-results-DocenteAsign')
@@ -52,7 +53,6 @@ const cargarFormularioAsignaturas = async () => {
 }
 
 const crearAsignatura = async () => {
-  await cargarAsignaturas();
 
   const cursoInput = document.getElementById('search-input-cursoasign');
   const codigoInput = document.getElementById('codigoASIGN');
@@ -76,16 +76,16 @@ const crearAsignatura = async () => {
 
   const Horarios = {dia: Dia, horario: Hora, salon_id: Salon}
  
-  const horarioOcupado = listaAsignaturas.some(asignatura => {
-    return asignatura.horario_clases.some(horario => {
-      return horario.dia === Dia && horario.horario === Hora && horario.salon_id === Salon;
-    });
-  });
+  // const horarioOcupado = listaAsignaturas.some(asignatura => {
+  //   return asignatura.horario_clases.some(horario => {
+  //     return horario.dia === Dia && horario.horario === Hora && horario.salon_id === Salon;
+  //   });
+  // });
   
-  if (horarioOcupado) {
-    alert('El horario seleccionado ya está ocupado. Por favor elija otro.');
-    return null;
-  }
+  // if (horarioOcupado) {
+  //   alert('El horario seleccionado ya está ocupado. Por favor elija otro.');
+  //   return null;
+  // }
 
   const getId = (entity, list) => {
     const result = list.find(element => entity === element.nombre);
@@ -136,7 +136,7 @@ const guardarAsignatura = async (nuevaAsignatura) => {
 }
 
 const mostrarListaAsignaturas = async () => {
-  await cargarAsignaturas()
+  await load("asignaturas")
 
   
   const busquedaAsignaturas = document.getElementById('listado-asignaturas');  
@@ -166,6 +166,7 @@ const mostrarListaAsignaturas = async () => {
     searchResultsAsignaturas.appendChild(li);
     return;
   }
+  busquedaAsignaturas.style.display = "block";
 }
 
 searchInputAsignaturas.addEventListener('input', function() {
@@ -317,7 +318,6 @@ const selectSalones = () => {
     const salon = listaSalones[i];
     options += `<option value="${salon.id}">Salón ${salon.numero_identificacion}, ${salon.edificio}, Piso ${salon.piso}</option>`;
   }
-  console.log(listaSalones)
   return options;
 }
 

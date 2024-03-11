@@ -178,7 +178,7 @@ button:hover {
 }
 
 
-#listado-alumnos {
+#listado-alumnos, #listado-asignaturas {
     display: none;
     max-width: 600px;
     margin: 20px auto;
@@ -187,7 +187,7 @@ button:hover {
 
 
 /* Botón para volver al formulario */
-#listado-alumnos button {
+#listado-alumnos button , #listado-asignaturas button {
     margin-top: 20px;
     background-color: #dc3545;
 }
