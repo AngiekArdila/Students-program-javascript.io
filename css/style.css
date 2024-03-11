@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif; /* Cambié la fuente a 'Montserrat' */
-    background-color: #f2f2f2;
+    background-color:whitesmoke ;
 }
 
 .container {
@@ -80,7 +80,7 @@ section {
     padding: 50px 0;
 }
 
-.inicio-section .texto h2 {
+.inicio-section .texto h1 {
     font-size: 3rem;
     color: white;
     font-weight: bold;
@@ -132,7 +132,98 @@ section {
 .box-container button a ion-icon {
     margin-right: 5px;
 }
-#creadorDeEstudiantes{
-    
 
+/* Arreglos ensayo chat */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#listado-alumnos {
+    display: none;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+
+
+/* Botón para volver al formulario */
+#listado-alumnos button {
+    margin-top: 20px;
+    background-color: #dc3545;
+}
+
+#listado-alumnos button:hover {
+    background-color: #c82333;
+}
+
+#matriculas{
+    background-color:rgb(81, 147, 204);
+}
+#creadorDeEstudiantes{
+    background-color:rgb(81, 147, 204);
+}
+#creadorDeAsignaturas{
+    background-color:rgb(81, 147, 204);
+}
+#programas{
+    background-color: lightslategray;
+}
+#tarifas{
+    background-color: lightslategray;
+}
+#departamentos{
+    background-color: lightslategray;
+}
+#salones{
+    background-color: lightslategray;
+}
+#periodos{
+    background-color: lightslategray;
+}
+
+
+ h2{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
 }
