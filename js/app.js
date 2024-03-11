@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded',async ()=>{
     mostrarListadoDepartamentos();
     listaProgramas = await load("programas");
     mostrarListadoProgramas();
+    listaSalones= await load("salones");
+    mostrarListadoSalones();
     listaAsignaturas = await load("asignaturas");
     listaCursos = await load("cursos");
     cargarFormularioAsignaturas();
     listaMatriculas= await load("matriculas");
     cargarFormularioMatriculas();
-    listaSalones= await load("salones");
-    mostrarListadoSalones();
     listaTarifas= await load("tarifas");
     mostrarListadoTarifas();
     listaProfesores= await load("profesores");

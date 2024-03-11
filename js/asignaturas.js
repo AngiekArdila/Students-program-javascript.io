@@ -317,6 +317,7 @@ const selectSalones = () => {
     const salon = listaSalones[i];
     options += `<option value="${salon.id}">Salón ${salon.numero_identificacion}, ${salon.edificio}, Piso ${salon.piso}</option>`;
   }
+  console.log(listaSalones)
   return options;
 }
 

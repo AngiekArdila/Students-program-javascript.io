@@ -17,3 +17,5 @@ const mostrarListadoSalones = async () => {
     listadoSalones.appendChild(ul); 
 }
 
+/* Mejoras */ 
+
