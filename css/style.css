@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Cambié la fuente a 'Montserrat' */
     background-color: #f2f2f2;
 }
 
@@ -19,7 +19,7 @@ body {
     position: fixed;
 } */
 
-#navbarSupportedContent{
+#navbarSupportedContent {
     width: 100px;
 }
 
@@ -51,14 +51,15 @@ section h2 {
     font-size: 24px; /* Tamaño de fuente para los títulos de sección */
     margin-bottom: 10px; /* Margen inferior para separar el título del contenido */
 }
+
 #institucion h2 {
     text-align: center;
     font-weight: bold;
 }
+
 #inicio {
     padding: 50px 0;
-    background-color:lightskyblue;
-
+    background-color: rgb(24, 23, 23);
 }
 
 .inicio-container {
@@ -67,7 +68,6 @@ section h2 {
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    
 }
 
 .texto {
@@ -79,6 +79,7 @@ section h2 {
     height: auto;
     display: block;
     margin-left: 17%;
+    border-radius: 15%;
 }
 
 /* Estilos para las secciones */
@@ -89,6 +90,7 @@ section {
 .inicio-section .texto h2 {
     font-size: 3rem;
     color: white;
+    font-weight: bold;
     font-family: 'Merriweather Sans', sans-serif;
 }
 
@@ -104,6 +106,7 @@ section {
     border: 1px solid black;
     background-color: rgb(255, 255, 255);
     padding: 20px;
+    text-align: center; /* Centra el contenido dentro del contenedor */
 }
 
 .box-container h3 {

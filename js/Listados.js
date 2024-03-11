@@ -93,3 +93,25 @@ const mostrarListadoSalones = async () => {
     listadoSalones.innerHTML = '';
     listadoSalones.appendChild(ul); 
 }
+
+const listaTarifas2 = [
+    { concepto: 'Agua', precio: 20 },
+    { concepto: 'Electricidad', precio: 30 },
+    { concepto: 'Gas', precio: 25 },
+    { concepto: 'Internet', precio: 40 },
+    { concepto: 'Teléfono', precio: 35 }
+  ];
+  
+  const mostrarListaTarifas = () => {
+    const listaTarifasElement = document.getElementById('listaTarifas');
+    
+    listaTarifas.forEach(tarifa => {
+      const item = document.createElement('li');
+      item.textContent = `${tarifa.concepto}: $${tarifa.precio}`;
+      listaTarifasElement.appendChild(item);
+    });
+  };
+  
+  // Llamar a la función para mostrar la lista de tarifas cuando se cargue la página
+  mostrarListaTarifas();
+  

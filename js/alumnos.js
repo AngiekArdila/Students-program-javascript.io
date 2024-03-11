@@ -1,5 +1,8 @@
 let listaAlumnos = [];
 
+
+
+
 const load = async (url) => {
     try {
         lista = [];
@@ -115,7 +118,9 @@ const mostrarListadoAlumnos = async () => {
 
     for (const alumno of listaAlumnos) {
         const li = document.createElement('li');
-        li.textContent = `ID: ${alumno.id}, Nombre: ${alumno.nombre}, Apellido: ${alumno.apellido}, Documento: ${alumno.tipo_documento}, Ciudad: ${alumno.ciudad_residencia}, Dirección: ${alumno.direccion}, Teléfono: ${alumno.telefono}, Fecha de Nacimiento: ${alumno.fecha_nacimiento}, Sexo: ${alumno.sexo}, ID Programa: ${alumno.programa_id}`;
+        li.innerHTML="";
+        li.innerHTML = createCard(alumno)
+        // li.textContent = `ID: ${alumno.id}, Nombre: ${alumno.nombre}, Apellido: ${alumno.apellido}, Documento: ${alumno.tipo_documento}, Ciudad: ${alumno.ciudad_residencia}, Dirección: ${alumno.direccion}, Teléfono: ${alumno.telefono}, Fecha de Nacimiento: ${alumno.fecha_nacimiento}, Sexo: ${alumno.sexo}, ID Programa: ${alumno.programa_id}`;
         ul.appendChild(li);
     }
 
