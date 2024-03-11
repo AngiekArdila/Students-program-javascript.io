@@ -15,15 +15,10 @@ body {
     padding: 20px;
 }
 
-/* .container-fluid{
-    position: fixed;
-} */
-
 #navbarSupportedContent {
     width: 100px;
 }
 
-/* Estilos para el navbar */
 .navbar {
     color: #fff;
     padding: 15px 0;
@@ -37,7 +32,6 @@ body {
     margin: 0 5px;
 }
 
-/* Estilos para las secciones */
 section {
     min-height: 90vh;
     padding: 30px; /* Aumentamos el relleno interno para más espacio dentro de cada sección */
@@ -82,7 +76,6 @@ section h2 {
     border-radius: 15%;
 }
 
-/* Estilos para las secciones */
 section {
     padding: 50px 0;
 }
@@ -138,4 +131,8 @@ section {
 
 .box-container button a ion-icon {
     margin-right: 5px;
+}
+#creadorDeEstudiantes{
+    
+
 }
