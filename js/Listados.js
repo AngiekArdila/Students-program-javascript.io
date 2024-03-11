@@ -97,10 +97,10 @@ const mostrarListadoSalones = async () => {
 
     const ul = document.createElement('ul');
 
-    for (const salon of listaSalones) {
+    for (const salones of listaSalones) {
         const li = document.createElement('li');
         li.innerHTML="";
-        li.innerHTML = createCard(salon)
+        li.innerHTML = createCard(salones)
         
         ul.appendChild(li);
     }

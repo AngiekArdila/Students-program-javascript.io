@@ -16,6 +16,11 @@ document.addEventListener('DOMContentLoaded',async ()=>{
     mostrarListadoSalones();
     listaTarifas= await load("tarifas");
     mostrarListadoTarifas();
+    listaProfesores= await load("profesores");
+    mostrarListadoProfesores();
+    cargarFormularioProfesores();
+   
+
 
 
     /*await loadProductos();

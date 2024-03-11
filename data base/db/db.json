@@ -60,12 +60,12 @@
       "nombre": "Departamento de Matemáticas"
     },
     {
-      "id": "daeb",
-      "nombre": ",ma,am,"
-    },
-    {
       "id": "630f",
       "nombre": ""
+    },
+    {
+      "id": "3",
+      "nombre": "Departamento de ciencias"
     }
   ],
   "profesores": [
@@ -84,6 +84,22 @@
       "nombre": "María",
       "apellido": "Gómez",
       "departamento_id": 2
+    },
+    {
+      "id": "3",
+      "tipo_documento": "CC",
+      "numero_documetno": "137880000",
+      "nombre": "camilo",
+      "apellido": "ruiz",
+      "departamento_id": 2
+    },
+    {
+      "id": "966e",
+      "nombre": "nnnnn",
+      "apellido": "njkjkj",
+      "tipo_documento": "212121",
+      "numero_documento": "212121",
+      "departamento_id": "cundinamarca "
     }
   ],
   "alumnos": [
@@ -118,13 +134,26 @@
       "nombre": "angie ",
       "apellido": "ardila",
       "tipo_documento": "15151515",
-      "numero_documento": "1515",
-      "ciudad_residencia": "hvgvg",
+      "numero_documento": "122",
+      "ciudad_residencia": "bucaramanga",
       "direccion": "nknk",
       "telefono": "6464",
       "fecha_nacimiento": "0066-05-04",
       "sexo": "Femenino",
       "programa_id": 5454
+    },
+    {
+      "id": "712e",
+      "nombre": "aaron",
+      "apellido": "ardila",
+      "tipo_documento": "100",
+      "numero_documento": "100",
+      "ciudad_residencia": "bucaramanga",
+      "direccion": "2222",
+      "telefono": "311",
+      "fecha_nacimiento": "2121-02-02",
+      "sexo": "Masculino",
+      "programa_id": 2
     }
   ],
   "cursos": [
@@ -139,6 +168,12 @@
       "nombre": "Álgebra Lineal",
       "codigo": "ALG-LI",
       "guia_catedra": "URL_Guia_Catedra.pdf"
+    },
+    {
+      "id": "3",
+      "nombre": "fisica",
+      "codigo": "ALG-LI",
+      "guia_catedra": "URL_Guia_Catedra.pdf"
     }
   ],
   "salones": [
@@ -148,6 +183,13 @@
       "edificio": "Edificio A",
       "piso": 2,
       "numero_identificacion": "S001"
+    },
+    {
+      "id": "2",
+      "capacidad_alumnos": 20,
+      "edificio": "Edificio b",
+      "piso": 1,
+      "numero_identificacion": "S002"
     }
   ],
   "asignaturas": [
@@ -228,11 +270,11 @@
       "precio": 3
     },
     {
-      "id": "fd8d",
-      "estudiante_id": 5,
-      "asignatura_id": 5,
+      "id": "04ce",
+      "estudiante_id": 2,
+      "asignatura_id": 3,
       "periodo_id": 5,
-      "precio": 5
+      "precio": -5
     }
   ]
 }

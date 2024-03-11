@@ -227,3 +227,11 @@ button:hover {
     font-size: 4rem;
     font-weight: bold;
 }
+/*listado profesores*/
+#profesores-crear {
+    margin-bottom: 20px; /* Agregar espacio entre el formulario y el listado */
+  }
+  
+  #listado-profesores {
+    margin-top: 20px; /* Agregar espacio sobre el listado */
+  }
