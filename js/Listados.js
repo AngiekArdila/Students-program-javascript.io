@@ -8,13 +8,18 @@ const mostrarListadoPeriodos = async () => {
 
     for (const periodo of listaPeriodos) {
         const li = document.createElement('li');
-        li.textContent = `ID: ${periodo.id}, Código: ${periodo.codigo}, Año: ${periodo.ano}, Semestre: ${periodo.semestre}`;
+        li.innerHTML="";
+        li.innerHTML = createCard(periodo)
+        // li.textContent = `ID: ${alumno.id}, Nombre: ${alumno.nombre}, Apellido: ${alumno.apellido}, Documento: ${alumno.tipo_documento}, Ciudad: ${alumno.ciudad_residencia}, Dirección: ${alumno.direccion}, Teléfono: ${alumno.telefono}, Fecha de Nacimiento: ${alumno.fecha_nacimiento}, Sexo: ${alumno.sexo}, ID Programa: ${alumno.programa_id}`;
+        ul.appendChild(li);
+        
         ul.appendChild(li);
     }
 
     listadoPeriodos.innerHTML = '';
     listadoPeriodos.appendChild(ul);
 }
+
 
 let listaProgramas = [];
 
@@ -26,7 +31,9 @@ const mostrarListadoProgramas = async () => {
 
     for (const programa of listaProgramas) {
         const li = document.createElement('li');
-        li.textContent = `ID: ${programa.id}, Nombre: ${programa.nombre}, Nivel: ${programa.nivel}`;
+        li.innerHTML="";
+        li.innerHTML = createCard(programa)
+        
         ul.appendChild(li);
     }
 
@@ -45,11 +52,15 @@ const mostrarListadoTarifas = async () => {
 
     const ul = document.createElement('ul');
 
+
     for (const tarifa of listaTarifas) {
         const li = document.createElement('li');
-        li.textContent = `ID: ${tarifa.id}, Costo por Crédito: ${tarifa.costo_credito}, ID del Periodo: ${tarifa.periodo_id}, ID del Programa: ${tarifa.programa_id}`;
+        li.innerHTML="";
+        li.innerHTML = createCard(tarifa)
+        
         ul.appendChild(li);
     }
+
 
     listadoTarifas.innerHTML = '';
     listadoTarifas.appendChild(ul);
@@ -66,7 +77,9 @@ const mostrarListadoDepartamentos = async () => {
 
     for (const departamento of listaDepartamentos) {
         const li = document.createElement('li');
-        li.textContent = `ID: ${departamento.id}, Nombre: ${departamento.nombre}`;
+        li.innerHTML="";
+        li.innerHTML = createCard(departamento)
+        
         ul.appendChild(li);
     }
 
@@ -86,7 +99,9 @@ const mostrarListadoSalones = async () => {
 
     for (const salon of listaSalones) {
         const li = document.createElement('li');
-        li.textContent = `ID: ${salon.id}, Capacidad: ${salon.capacidad_alumnos}, Edificio: ${salon.edificio}, Piso: ${salon.piso}, Número de Identificación: ${salon.numero_identificacion}`;
+        li.innerHTML="";
+        li.innerHTML = createCard(salon)
+        
         ul.appendChild(li);
     }
 
@@ -94,24 +109,4 @@ const mostrarListadoSalones = async () => {
     listadoSalones.appendChild(ul); 
 }
 
-const listaTarifas2 = [
-    { concepto: 'Agua', precio: 20 },
-    { concepto: 'Electricidad', precio: 30 },
-    { concepto: 'Gas', precio: 25 },
-    { concepto: 'Internet', precio: 40 },
-    { concepto: 'Teléfono', precio: 35 }
-  ];
-  
-  const mostrarListaTarifas = () => {
-    const listaTarifasElement = document.getElementById('listaTarifas');
-    
-    listaTarifas.forEach(tarifa => {
-      const item = document.createElement('li');
-      item.textContent = `${tarifa.concepto}: $${tarifa.precio}`;
-      listaTarifasElement.appendChild(item);
-    });
-  };
-  
-  // Llamar a la función para mostrar la lista de tarifas cuando se cargue la página
-  mostrarListaTarifas();
   

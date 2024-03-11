@@ -72,7 +72,9 @@ const mostrarListadoMatriculas = async () => {
 
     for (const matricula of listaMatriculas) {
         const li = document.createElement('li');
-        li.textContent = `ID: ${matricula.id}, Estudiante ID: ${matricula.estudiante_id}, Asignatura ID: ${matricula.asignatura_id}, Periodo ID: ${matricula.periodo_id}, Precio: ${matricula.precio}`;
+        li.innerHTML="";
+        li.innerHTML = createCard(matricula)
+        
         ul.appendChild(li);
     }
 
